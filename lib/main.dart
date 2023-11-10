@@ -41,9 +41,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("build=====>>>Main");
     return Scaffold(
       appBar: AppBar(
         title: const Text('Managing state without tools'),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
@@ -54,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.all(20.0),
               child: const Text(
                 'Managing state without tools',
-                style: TextStyle(fontSize: 22.0),
+                style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.amber),
               ),
             ),
             const SizedBox(height: 20.0),
